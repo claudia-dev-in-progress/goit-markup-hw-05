@@ -114,7 +114,6 @@ ul {
   letter-spacing: 0.03em;
   margin-left: 23px;
 }
-.navigation-link:active,
 .navigation-link:hover,
 .header-contact-link:hover,
 .header-contact-link:focus,
@@ -124,6 +123,8 @@ ul {
 #address:hover,
 #address:focus {
   color: #2196f3;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover,
@@ -207,13 +208,14 @@ ul {
 .request-button:hover,
 .request-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .request-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
   color: #ffffff;
   border: none;
   background: #2196f3;
@@ -238,7 +240,6 @@ ul {
   color: #212121;
   background: #f5f4fa;
   border-radius: 4px;
-  cursor: pointer;
   padding: 6px 22px;
 }
 .button:hover,
@@ -248,7 +249,10 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: color background box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 370px);
@@ -263,12 +267,13 @@ ul {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  cursor: pointer;
 }
 
 .cards-list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-title {
@@ -329,7 +334,6 @@ ul {
   width: 44px;
   height: 44px;
   justify-content: center;
-  cursor: pointer;
 }
 
 .icon-title {
@@ -403,16 +407,19 @@ ul {
 .header-icons:hover {
   fill: #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list-footer:hover {
   background-color: #2196f3;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer:hover {
   border: 1px solid #2196f3;
   fill: #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-list-item:hover {
   background-color: #2196f3;
@@ -421,6 +428,8 @@ ul {
   justify-content: center;
   align-items: center;
   fill: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fifth-section {
   margin-top: 94px;
@@ -484,6 +493,7 @@ ul {
 .close:focus {
   text-decoration: none;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
