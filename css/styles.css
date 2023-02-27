@@ -449,7 +449,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.backdrop {
+.modal {
   position: fixed;
   z-index: 1;
   left: 50%;
@@ -461,11 +461,8 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: opacity 250ms ease;
 }
-.backdrop:target {
-  opacity: 1;
-}
+
 .is-hidden {
   pointer-events: none;
   opacity: 0;
@@ -487,4 +484,13 @@ ul {
 .close:focus {
   text-decoration: none;
   cursor: pointer;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
