@@ -116,6 +116,7 @@ ul {
   letter-spacing: 0.03em;
   margin-left: 23px;
 }
+
 .navigation-link:hover,
 .header-contact-link:hover,
 .header-contact-link:focus,
@@ -521,22 +522,6 @@ ul {
   transform: translateY(0px);
 }
 
-.nav-item {
-  position: relative;
-}
-.nav-item a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  border-bottom: 4px solid #2196f3;
-  margin-top: 45px;
-  visibility: hidden;
-}
-.nav-item a:active::after {
-  visibility: visible;
-}
 .activity-description {
   font-weight: 700;
   line-height: 16px;
@@ -552,4 +537,24 @@ ul {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   top: 1370px;
+}
+.nav-item {
+  position: relative;
+}
+.nav-item a::after {
+  content: "";
+  border: 2px solid #2196f3;
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  border-radius: 2px;
+  visibility: hidden;
+  left: 0;
+}
+.nav-item a:focus::after {
+  visibility: visible;
+}
+.navigation-list li a:hover,
+.navigation-list li a:focus {
+  color: #2196f3;
 }
