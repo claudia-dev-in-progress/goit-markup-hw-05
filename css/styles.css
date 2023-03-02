@@ -92,6 +92,7 @@ ul {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-details {
   display: flex;
@@ -102,6 +103,7 @@ ul {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .webstudio-header,
 .webstudio-footer {
@@ -124,13 +126,6 @@ ul {
 #address:focus {
   color: #2196f3;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-link:hover,
-.navigation-link:active {
-  border-bottom: 4px solid #2196f3;
-  padding-bottom: 29px;
 }
 
 .webstudio-header::after {
@@ -209,7 +204,6 @@ ul {
 .request-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .request-button {
   font-weight: 700;
@@ -224,6 +218,7 @@ ul {
   padding-bottom: 10px;
   width: 200px;
   margin: 0 auto;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons {
   display: flex;
@@ -241,6 +236,7 @@ ul {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: color, background, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -250,7 +246,6 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-  transition: color background box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards {
@@ -267,13 +262,13 @@ ul {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-title {
@@ -297,6 +292,7 @@ ul {
   color: #ffffff;
   font-style: normal;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address,
@@ -309,6 +305,7 @@ ul {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-details {
@@ -334,6 +331,7 @@ ul {
   width: 44px;
   height: 44px;
   justify-content: center;
+  transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-title {
@@ -354,6 +352,7 @@ ul {
   width: 44px;
   height: 44px;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-footer {
   display: flex;
@@ -370,6 +369,7 @@ ul {
 .header-icons {
   margin-right: 10px;
   fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -402,24 +402,22 @@ ul {
   align-items: center;
   padding-inline-start: 0px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icons:hover {
   fill: #2196f3;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list-footer:hover {
   background-color: #2196f3;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer:hover {
   border: 1px solid #2196f3;
   fill: #2196f3;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-list-item:hover {
   background-color: #2196f3;
@@ -429,7 +427,6 @@ ul {
   align-items: center;
   fill: #ffffff;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fifth-section {
   margin-top: 94px;
@@ -460,7 +457,6 @@ ul {
 
 .modal {
   position: fixed;
-  z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -488,12 +484,12 @@ ul {
   width: 30px;
   height: 30px;
   background: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover,
 .close:focus {
   text-decoration: none;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
@@ -502,5 +498,63 @@ ul {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 2;
+}
+.cards-list-2 {
+  height: 110px;
+}
+.cards-list-1 {
+  height: 294px;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  height: 294px;
+  width: 370px;
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms linear;
+}
+
+.cards-list-1:hover .overlay {
+  transform: translateY(0px);
+}
+
+.nav-item {
+  position: relative;
+}
+.nav-item a::after {
+  content: "";
+  border: 2px solid #2196f3;
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  border-radius: 2px;
+  visibility: hidden;
+  left: 0;
+}
+.nav-item a:focus::after {
+  visibility: visible;
+}
+.navigation-list li a:hover,
+.navigation-list li a:focus {
+  color: #2196f3;
+}
+
+.activity-description {
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 20px;
+}
+.activity-container {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  top: 1370px;
 }
