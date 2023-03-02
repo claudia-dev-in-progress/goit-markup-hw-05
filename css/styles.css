@@ -526,22 +526,17 @@ ul {
 }
 .nav-item a::after {
   content: "";
-  border: 2px solid #2196f3;
-  width: 100%;
   position: absolute;
-  bottom: -12px;
-  border-radius: 2px;
-  visibility: hidden;
   left: 0;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 4px solid #2196f3;
+  margin-top: 45px;
+  visibility: hidden;
 }
-.nav-item a:focus::after {
+.nav-item a:active::after {
   visibility: visible;
 }
-.navigation-list li a:hover,
-.navigation-list li a:focus {
-  color: #2196f3;
-}
-
 .activity-description {
   font-weight: 700;
   line-height: 16px;
@@ -549,7 +544,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .activity-container {
   position: absolute;
