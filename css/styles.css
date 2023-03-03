@@ -516,6 +516,13 @@ ul {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform 250ms linear;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 60px 30px;
+  color: #ffffff;
 }
 
 .cards-list-1:hover .overlay {
