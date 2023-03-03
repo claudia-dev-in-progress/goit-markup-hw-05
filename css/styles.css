@@ -69,6 +69,9 @@ ul {
   list-style: none;
 }
 
+.header-icons {
+  margin-right: 10px;
+}
 .header-border {
   width: 100%;
   border-bottom: 1px solid #ececec;
@@ -97,13 +100,17 @@ ul {
 .header-contact-details {
   display: flex;
   gap: 30px;
-  align-items: center;
+  padding-top: 20px;
 }
 .header-contact-link {
+  display: flex;
+}
+a.header-contact-link {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 .webstudio-header,
 .webstudio-footer {
@@ -128,7 +135,11 @@ ul {
   color: #2196f3;
   cursor: pointer;
 }
-
+a.header-contact-link:hover,
+a.header-contact-link:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
 .webstudio-header::after {
   content: "Studio";
   color: #212121;
@@ -367,14 +378,14 @@ ul {
 .webstudio-footer-logo {
   padding-bottom: 20px;
 }
-.header-icons {
+a.header-contact-link {
   margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 .header-contact {
-  padding-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -404,11 +415,6 @@ ul {
   padding-inline-start: 0px;
   fill: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-icons:hover {
-  fill: #2196f3;
-  cursor: pointer;
 }
 
 .icon-list-footer:hover {
